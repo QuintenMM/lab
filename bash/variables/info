@@ -1,0 +1,12 @@
+#!/bin/bash
+# Display info on the dotfiles folder 
+
+dotfiles_dir=$(pwd)
+file_count=$(ls $dotfiles_dir | wc -l)
+today=$(date +%Y-%m-%d)
+
+echo "===Dotfiles Folder Info==="
+echo "User: $USER"
+echo "Location of the dotfiles folder: $dotfiles_dir"
+echo "Count files in folder $file_count"
+echo "Date: $today"
